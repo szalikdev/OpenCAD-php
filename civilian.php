@@ -226,9 +226,9 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 									<div class="x_title">
 										<h2>My Identities</h2>
 										<ul class="nav navbar-right panel_toolbox">
-											<li><a class="collapse-link"><i class="fasfa-chevron-up"></i></a>
+											<li><a class="collapse-link"><i class="fas fa-chevron-up"></i></a>
 											</li>
-											<li><a class="close-link"><i class="fasfa-close"></i></a>
+											<li><a class="close-link"><i class="fas fa-close"></i></a>
 											</li>
 										</ul>
 										<div class="clearfix"></div>
@@ -251,9 +251,9 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 									<div class="x_title">
 										<h2>My Vehicles</h2>
 										<ul class="nav navbar-right panel_toolbox">
-											<li><a class="collapse-link"><i class="fasfa-chevron-up"></i></a>
+											<li><a class="collapse-link"><i class="fas fa-chevron-up"></i></a>
 											</li>
-											<li><a class="close-link"><i class="fasfa-close"></i></a>
+											<li><a class="close-link"><i class="fas fa-close"></i></a>
 											</li>
 										</ul>
 										<div class="clearfix"></div>
@@ -276,9 +276,9 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 									<div class="x_title">
 										<h2>My Weapons</h2>
 										<ul class="nav navbar-right panel_toolbox">
-											<li><a class="collapse-link"><i class="fasfa-chevron-up"></i></a>
+											<li><a class="collapse-link"><i class="fas fa-chevron-up"></i></a>
 											</li>
-											<li><a class="close-link"><i class="fasfa-close"></i></a>
+											<li><a class="close-link"><i class="fas fa-close"></i></a>
 											</li>
 										</ul>
 										<div class="clearfix"></div>
@@ -350,7 +350,7 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 							<div class="form-group row">
 								<label class="col-md-2 control-label"><span>Description <a data-toggle="modal"
 											href="#911CallHelpModal"><i
-												class="fasfa-question-circle"></i></a></span></label>
+												class="fas fa-question-circle"></i></a></span></label>
 								<div class="col-md-10">
 									<textarea id="911_description" name="911_description" class="form-control"
 										style="resize:none;" rows="4"></textarea>
@@ -449,9 +449,9 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 								<div class="x_title">
 									<h2>NCIC Warrants</h2>
 									<ul class="nav navbar-right panel_toolbox">
-										<li><a class="collapse-link"><i class="fasfa-chevron-up"></i></a>
+										<li><a class="collapse-link"><i class="fas fa-chevron-up"></i></a>
 										</li>
-										<li><a class="close-link"><i class="fasfa-close"></i></a>
+										<li><a class="close-link"><i class="fas fa-close"></i></a>
 										</li>
 									</ul>
 									<div class="clearfix"></div>
@@ -494,7 +494,7 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 								<label class="col-lg-2 control-label">Name</label>
 								<div class="col-lg-10">
 									<input name="civNameReq" class="form-control" id="civNameReq"value="<?php echo $civName;?>" required />
-									<span class="fasfa-user form-control-feedback right" aria-hidden="true"></span>
+									<span class="fas fa-user form-control-feedback right" aria-hidden="true"></span>
 								</div>
 								<!-- ./ col-sm-9 -->
 							</div>
@@ -503,7 +503,7 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 								<label class="col-lg-2 control-label">Date of Birth</label>
 								<div class="col-lg-10">
 									<input type="text" name="civDobReq" class="form-control" id="datepicker" maxlength="10" value="<?php echo $civDob;?>" required />
-									<span class="fasfa-calendar form-control-feedback right" aria-hidden="true"></span>
+									<span class="fas fa-calendar form-control-feedback right" aria-hidden="true"></span>
 								</div>
 								<!-- ./ col-sm-9 -->
 							</div>
@@ -512,7 +512,7 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 								<label class="col-lg-2 control-label">Address</label>
 								<div class="col-lg-10">
 									<input type="text" name="civAddressReq" class="form-control" id="civAddressReq" value="<?php echo $civAddr;?>" required />
-									<span class="fasfa-location-arrow form-control-feedback right" aria-hidden="true"></span>
+									<span class="fas fa-location-arrow form-control-feedback right" aria-hidden="true"></span>
 								</div>
 								<!-- ./ col-sm-9 -->
 							</div>
@@ -602,7 +602,7 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 								<label class="col-lg-2 control-label">Name</label>
 								<div class="col-lg-10">
 									<input name="civNameReq" class="form-control civNameReq" id="civNameReq" value="<?php echo $civName;?>" required />
-									<span class="fasfa-user form-control-feedback right" aria-hidden="true"></span>
+									<span class="fas fa-user form-control-feedback right" aria-hidden="true"></span>
 								</div>
 								<!-- ./ col-sm-9 -->
 							</div>
@@ -611,7 +611,7 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 								<label class="col-lg-2 control-label">Date of Birth</label>
 								<div class="col-lg-10">
 									<input type="text" name="civDobReq" class="form-control civDobReq" id="datepicker2" maxlength="10" value="<?php echo $civDob;?>" readonly />
-									<span class="fasfa-calendar form-control-feedback right" aria-hidden="true"></span>
+									<span class="fas fa-calendar form-control-feedback right" aria-hidden="true"></span>
 								</div>
 								<!-- ./ col-sm-9 -->
 							</div>
@@ -620,7 +620,7 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 								<label class="col-lg-2 control-label">Address</label>
 								<div class="col-lg-10">
 									<input type="text" name="civAddressReq" class="form-control civAddressReq" id="civAddressReq" value="<?php echo $civAddr;?>" required />
-									<span class="fasfa-location-arrow form-control-feedback right" aria-hidden="true"></span>
+									<span class="fas fa-location-arrow form-control-feedback right" aria-hidden="true"></span>
 								</div>
 								<!-- ./ col-sm-9 -->
 							</div>
