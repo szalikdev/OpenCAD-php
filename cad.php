@@ -971,7 +971,7 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 				<div class="form-group row">
 						<label class="col-lg-2 control-label">Vehicle Plate</label>
 						<div class="col-lg-10">
-										<input type="text" class="form-control vehicle_plate" name="vehicle_plate" placeholder="The plate of the BOLO vehicle." />
+							<input type="text" class="form-control vehicle_plate" name="vehicle_plate" placeholder="The plate of the BOLO vehicle." />
 						</div>
 				<!-- ./ col-sm-9 -->
 			  </div>
@@ -979,7 +979,9 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 			  <div class="form-group row">
 						<label class="col-lg-2 control-label">Primary Color</label>
 						<div class="col-lg-10">
-										<input type="text" class="form-control primary_color" name="primary_color" placeholder="The primary color of the BOLO vehicle." />
+							<select class="form-control selectpicker" data-live-search="true" name="primary_color" title="Vehicle Primary Color">
+								<?php getVehicleColors();?>
+						   </select>
 						</div>
 				<!-- ./ col-sm-9 -->
 			  </div>
@@ -987,7 +989,9 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 					 <div class="form-group row">
 						<label class="col-lg-2 control-label">Secondary Color</label>
 						<div class="col-lg-10">
-							<input type="text" class="form-control secondary_color" name="secondary_color" placeholder="The secondary color, if any, of the BOLO vehicle." />                        </div>
+							<select class="form-control selectpicker" data-live-search="true" name="secondary_color" title="Vehicle Secondary Color, if any">
+								<?php getVehicleColors();?>
+						   </select>
 						<!-- ./ col-sm-9 -->
 					 </div>
 				<!-- ./ col-sm-9 -->
