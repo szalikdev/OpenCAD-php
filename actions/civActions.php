@@ -585,15 +585,15 @@ function edit_name()
     $address = htmlspecialchars($_POST['civAddressReq']);
     $sex = htmlspecialchars($_POST['civSexReq']);
     $race = htmlspecialchars($_POST['civRaceReq']);
-    $dlstatus = htmlspecialchars($_POST['civDL']);
+    $dlstatus = htmlspecialchars($_POST['civDLStatus']);
     $hair = htmlspecialchars($_POST['civHairReq']);
     $build = htmlspecialchars($_POST['civBuildReq']);
 	$weapon = htmlspecialchars($_POST['civWepStat']);
 	$deceased = htmlspecialchars($_POST['civDec']);
     $editid = htmlspecialchars($_POST['Edit_id']);
 
-    $stmt = $pdo->prepare("UPDATE ".DB_PREFIX."ncic_names SET name = ?, dob = ?, address = ?, gender = ?, race = ?, hair_color = ?, build = ? WHERE id = ?");
-    $result = $stmt->execute(array($name, $dob, $address, $sex, $race, $hair, $build, $editid));
+    $stmt = $pdo->prepare("UPDATE ".DB_PREFIX."ncic_names SET name = ?, dob = ?, address = ?, gender = ?, race = ?, hair_color = ?, build = ?, dl_status = ?, WHERE id = ?");
+    $result = $stmt->execute(array($name, $dob, $address, $sex, $race, $hair, $build, $dlstatus, $editid));
     if (!$result)
     {
         $_SESSION['error'] = $stmt->errorInfo();
