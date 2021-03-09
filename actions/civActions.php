@@ -128,7 +128,7 @@ function ncicGetNames()
                 <th>Address</th>
                 <th>Gender</th>
                 <th>Race</th>
-                <th>Drivers License</th>
+                <th>Drivers License Type</th>
                 <th>Drivers License Status</th>
                 <th>Hair Color</th>
                 <th>Build</th>
