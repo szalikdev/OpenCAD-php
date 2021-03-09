@@ -602,7 +602,7 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 							<div class="form-group row">
 								<label class="col-lg-2 control-label">Name</label>
 								<div class="col-lg-10">
-									<input name="civNameReq" class="form-control civNameReq" id="civNameReq" value="<?php echo $civName;?>" required />
+									<input name="civNameReq" class="form-control civNameReq" id="civNameReq" value="<?php echo $civName;?>" readonly />
 									<span class="fas fa-user form-control-feedback right" aria-hidden="true"></span>
 								</div>
 								<!-- ./ col-sm-9 -->
