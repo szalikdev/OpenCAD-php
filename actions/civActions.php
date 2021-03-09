@@ -567,15 +567,15 @@ function edit_name()
         die();
     }
 
-    // $num_rows = $stmt->rowCount();
+    $num_rows = $stmt->rowCount();
 
-    // if (!$num_rows == 0)
-    // {
-    //     $_SESSION['identityMessage'] = '<div class="alert alert-danger"><span>Name already exists</span></div>';
+    if (!$num_rows == 0)
+    {
+        $_SESSION['identityMessage'] = '<div class="alert alert-danger"><span>Name already exists</span></div>';
 
-    //     sleep(1);
-    //     header("Location:".BASE_URL."/civilian.php");
-    // }
+        sleep(1);
+        header("Location:".BASE_URL."/civilian.php");
+    }
 
     // If name doesn't exist, add it to ncic_requests table
     //Who submitted it
