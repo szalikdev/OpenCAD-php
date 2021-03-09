@@ -384,9 +384,9 @@ function create_name()
 	$weapon = htmlspecialchars($_POST['civWepStat']);
 	$deceased = htmlspecialchars($_POST['civDec']);
 
-    $stmt = $pdo->prepare("INSERT INTO ".DB_PREFIX."ncic_names (submittedByName, submittedById, name, dob, address, gender, race, hair_color, build)
-    VALUES (?,?,?,?,?,?,?,?,?)");
-    $result = $stmt->execute(array($submittedByName, $submitttedById, $name, $dob, $address, $sex, $race, $hair, $build));
+    $stmt = $pdo->prepare("INSERT INTO ".DB_PREFIX."ncic_names (submittedByName, submittedById, name, dob, address, gender, race, dl_status, hair_color, build)
+    VALUES (?,?,?,?,?,?,?,?,?,?)");
+    $result = $stmt->execute(array($submittedByName, $submitttedById, $name, $dob, $address, $sex, $race, $dlstatus, $hair, $build));
 
     if (!$result)
     {
@@ -580,7 +580,7 @@ function edit_name()
     $submittedByName = $_SESSION['name'];
     $submitttedById = $_SESSION['id'];
     //Submission Data
-    $name;
+    //$name; -- no need to define this value again.
     $dob = htmlspecialchars($_POST['civDobReq']);
     $address = htmlspecialchars($_POST['civAddressReq']);
     $sex = htmlspecialchars($_POST['civSexReq']);
@@ -594,8 +594,6 @@ function edit_name()
 
     $stmt = $pdo->prepare("UPDATE ".DB_PREFIX."ncic_names SET name = ?, dob = ?, address = ?, gender = ?, race = ?, hair_color = ?, build = ?, dl_status = ? WHERE id = ?");
     $result = $stmt->execute(array($name, $dob, $address, $sex, $race, $hair, $build, $dlstatus, $editid));
-    echo $dlstatus;
-    die();
     if (!$result)
     {
         $_SESSION['error'] = $stmt->errorInfo();
