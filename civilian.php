@@ -1068,6 +1068,7 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 						$('.civBuildReq_picker').selectpicker('val', data.build);
 						$('.civWepStat_picker').selectpicker('val', data.weapon_permit);
 						$('.civDec_picker').selectpicker('val', data.deceased);
+						$('.civDLStatus_picker').selectpicker('val', data.dl_status);
 						$('#IdentityEditModal .Editdataid').val(data.id);
 					});
 
