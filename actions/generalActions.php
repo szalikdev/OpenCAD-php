@@ -1448,7 +1448,7 @@ function getVehicleColors()
         die();
     }
 
-    $result = $pdo->query("SELECT DISTINCT ".DB_PREFIX."color_group, color_name FROM ".DB_PREFIX."colors");
+    $result = $pdo->query("SELECT DISTINCT color_group, color_name FROM ".DB_PREFIX."colors");
 
     if (!$result)
     {
