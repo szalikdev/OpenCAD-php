@@ -1462,7 +1462,7 @@ function getVehicleColors()
 
     foreach($result as $row)
     {
-        echo '<option value="'.$row[1].'">['.$row[0].']'.$row[1].'</option>';
+        echo '<option value="'.$row[1].'">'.$row[0].' '.$row[1].'</option>';
     }
 }
 
