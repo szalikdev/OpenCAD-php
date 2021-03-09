@@ -1430,7 +1430,7 @@ function getCitations()
 }
 
 /**#@+
- * function getVehicleMakes()
+ * function getVehicleColors()
  *
  * Querys database to retrieve all vehicle colors.
  *
