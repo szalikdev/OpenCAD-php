@@ -502,7 +502,7 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
         $(".delete_group").click(function() {
             var dept_id = $(this).attr("data-dept-id");
             var user_id = $(this).attr("data-user-id");
-            if (confirm("Are you sure to delete the selected Group?")) {
+            if (confirm("Are you sure you want to remove the user from the selected group?th")) {
                 $.ajax({
                     cache: false,
                     type: 'GET',
