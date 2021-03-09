@@ -950,9 +950,9 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 				<div class="form-group row">
 				</div>
 				<div class="form-group row">
-						<label class="col-lg-2 control-label">Vehicle Make</label>
+						<label class="col-lg-2 control-label">Vehicle Brand</label>
 						<div class="col-lg-10">
-						   <select class="form-control selectpicker" data-live-search="true" name="vehicle_make" title="Vehicle Make">
+						   <select class="form-control selectpicker" data-live-search="true" name="vehicle_make" title="Vehicle Brand">
 							  <?php getVehicleMakes();?>
 						   </select>
 						</div>
@@ -1037,9 +1037,9 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 				<div class="form-group row">
 				</div>
 				<div class="form-group row">
-						<label class="col-lg-2 control-label">Vehicle Make</label>
+						<label class="col-lg-2 control-label">Vehicle Brand</label>
 						<div class="col-lg-10">
-						   <select class="form-control selectpicker vehicle_make" data-live-search="true" name="vehicle_make" title="Vehicle Make" required>
+						   <select class="form-control selectpicker vehicle_make" data-live-search="true" name="vehicle_make" title="Vehicle Brand" required>
 							  <?php getVehicleMakes();?>
 						   </select>
 						</div>
@@ -1219,15 +1219,15 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 			   <div class="modal-body">
 				  <form class="newCallForm" id="newCallForm">
 					 <div class="form-group row">
-						<label class="col-lg-2 control-label">Vehicle Make</label>
+						<label class="col-lg-2 control-label">Vehicle Brand</label>
 						<div class="col-lg-10">
-						   <select class="form-control selectpicker" data-live-search="true" name="vehicle_make" title="Vehicle Make" required>
+						   <select class="form-control selectpicker" data-live-search="true" name="vehicle_make" title="Vehicle Brand" required>
 							  <?php getVehicleMakes();?>
 						   </select>
 						</div>
 						<label class="col-lg-2 control-label">Vehicle Model</label>
 						<div class="col-lg-10">
-						   <select class="form-control selectpicker" data-live-search="true" name="Vehicle_Make" title="Vehicle Make" required>
+						   <select class="form-control selectpicker" data-live-search="true" name="Vehicle_Make" title="Vehicle Model" required>
 							  <?php getVehicleModels();?>
 						   </select>
 						</div>
