@@ -439,7 +439,7 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
     </script>
     <script>
     $(function() {
-        $(document).on('click', '#edit_nameBtn', function(e) {
+        $(document).on('click', '#IdentityEditModal', function(e) {
             e.preventDefault();
             var edit_id = $(this).data('id');
             console.log();
