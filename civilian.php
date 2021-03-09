@@ -511,8 +511,9 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 							<div class="form-group row">
 								<label class="col-lg-2 control-label">Address</label>
 								<div class="col-lg-10">
-									<input type="text" name="civAddressReq" class="form-control" id="civAddressReq" value="<?php echo $civAddr;?>" required />
-									<span class="fas fa-location-arrow form-control-feedback right" aria-hidden="true"></span>
+								<select class="form-control selectpicker" data-live-search="true" name="civAddressReq" id="civAddressReq" title="Street" required>
+									<?php getStreet();?>
+								</select>
 								</div>
 								<!-- ./ col-sm-9 -->
 							</div>
