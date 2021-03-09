@@ -594,7 +594,6 @@ function edit_name()
 
     $stmt = $pdo->prepare("UPDATE ".DB_PREFIX."ncic_names SET name = ?, dob = ?, address = ?, gender = ?, race = ?, hair_color = ?, build = ? WHERE id = ?");
     $result = $stmt->execute(array($name, $dob, $address, $sex, $race, $hair, $build, $editid));
-    die();
     if (!$result)
     {
         $_SESSION['error'] = $stmt->errorInfo();
