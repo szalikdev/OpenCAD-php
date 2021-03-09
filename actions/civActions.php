@@ -592,7 +592,7 @@ function edit_name()
 	$deceased = htmlspecialchars($_POST['civDec']);
     $editid = htmlspecialchars($_POST['Edit_id']);
 
-    $stmt = $pdo->prepare("UPDATE ".DB_PREFIX."ncic_names SET name = ?, dob = ?, address = ?, gender = ?, race = ?, hair_color = ?, build = ?, dl_status = ?, WHERE id = ?");
+    $stmt = $pdo->prepare("UPDATE ".DB_PREFIX."ncic_names SET name = ?, dob = ?, address = ?, gender = ?, race = ?, hair_color = ?, build = ?, dl_status = ? WHERE id = ?");
     $result = $stmt->execute(array($name, $dob, $address, $sex, $race, $hair, $build, $dlstatus, $editid));
     if (!$result)
     {
