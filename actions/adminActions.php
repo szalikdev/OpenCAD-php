@@ -358,7 +358,7 @@ function getRole()
             $output .= '<option value="2">Moderator</option>';
             $output .= '<option value="3">Administrator</option>';
         break;
-
+        
         case 2:
             $output .= '<option value="1">User</option>';
             $output .= '<option selected value="2">Moderator</option>';
@@ -371,10 +371,6 @@ function getRole()
             $output .= '<option selected value="3">Administrator</option>';
         break;
     }
-
-    var_dump($id);
-    var_dump($hisRole);
-    return var_dump($output);
 
     echo $output;
 }
