@@ -354,19 +354,19 @@ function getRole()
     switch($hisRole)
     {
         case 1:
-            $output .= '<option selected value="1">User</option>';
-            $output .= '<option value="2">Moderator</option>';
-            $output .= '<option value="3">Administrator</option>';
+            $output .= '<option selected value="1">'.$hisRole.'</option>';
+            $output .= '<option value="2">'.$hisRole.'</option>';
+            $output .= '<option value="3">'.$hisRole.'</option>';
         break;
         case 2:
-            $output .= '<option value="1">User</option>';
-            $output .= '<option selected value="2">Moderator</option>';
-            $output .= '<option value="3">Administrator</option>';
+            $output .= '<option value="1">'.$hisRole.'</option>';
+            $output .= '<option selected value="2">'.$hisRole.'</option>';
+            $output .= '<option value="3">'.$hisRole.'</option>';
         break;
         case 3:
-            $output .= '<option value="1">User</option>';
-            $output .= '<option value="2">Moderator</option>';
-            $output .= '<option selected value="3">Administrator</option>';
+            $output .= '<option value="1">'.$hisRole.'</option>';
+            $output .= '<option value="2">'.$hisRole.'</option>';
+            $output .= '<option selected value="3">'.$hisRole.'</option>';
         break;
     }
 
