@@ -1694,7 +1694,7 @@ function getWarrantTypes()
         {
             echo '
             <tr>
-                <td>' . $row[1] . '</td>
+                <td>' . $row[2] . '</td>
                 <td>';
         if ( DEMO_MODE == false) {
             echo '<form action="'.BASE_URL.'/actions/dataActions.php" method="post">';
