@@ -346,11 +346,23 @@ function getPendingUsers()
 
 function getRole()
 {
+    $id = $_SESSION['id'];
+    $hisRole = _getRole($id);
+
     $output = "";
 
-    $output .= '<option value="1">User</option>';
-    $output .= '<option value="2">Moderator</option>';
-    $output .= '<option value="3">Administrator</option>';
+    switch($hisRole)
+    {
+        case 1:
+            $output .= '<option selected value="1">User</option>';
+        break;
+        case 2:
+            $output .= '<option selected value="2">Moderator</option>';
+        break;
+        case 3:
+            $output .= '<option selected value="3">Administrator</option>';
+        break;
+    }
 
     echo $output;
 }
@@ -635,8 +647,8 @@ function getUsers()
 
         getUserGroupsApproved($row[0]);
         echo '</td><td>';
-    if ( DEMO_MODE == false) {
-        echo '<form action="'.BASE_URL.'/actions/adminActions.php" method="post">';
+        if ( DEMO_MODE == false) {
+            echo '<form action="'.BASE_URL.'/actions/adminActions.php" method="post">';
         if ( ( MODERATOR_EDIT_USER == true && $_SESSION['admin_privilege'] == 2 ) || ( $_SESSION['admin_privilege'] == 3 ) )
         {
             echo '<button name="editUser" type="button" data-toggle="modal" id="' . $row[0] . '" data-target="#editUserModal" class="btn btn-xs btn-link" >Edit</button>';
