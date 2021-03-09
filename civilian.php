@@ -765,7 +765,7 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
 								<div class="col-lg-10">
 									<select class="form-control veh_reg_state_option" name="veh_reg_state" required>
 										<option></option>
-										<?php getDataSetColumn($table = "ncic_plates", $data = "veh_reg_state", $leadTrim = 18, $followTrim = 22); ?>
+										<?php getDataSetColumn($table = "ncic_plates", $data = "veh_reg_state", $leadTrim = 18, $followTrim = 23); ?>
 									</select>
 								</div>
 								<!-- ./ col-sm-9 -->

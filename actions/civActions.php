@@ -128,8 +128,7 @@ function ncicGetNames()
                 <th>Address</th>
                 <th>Gender</th>
                 <th>Race</th>
-                <th>Drivers License Type</th>
-                <th>Drivers License Status</th>
+                <th>Drivers License</th>
                 <th>Hair Color</th>
                 <th>Build</th>
                 <th>Actions</th>
@@ -146,8 +145,7 @@ function ncicGetNames()
                 <td>'.$row['dob'].'</td>
                 <td>'.$row['address'].'</td>
                 <td>'.$row['gender'].'</td>
-                <td>'.$row['race'].'</td>
-                <td>'.$row['dl_type'].'</td> 
+                <td>'.$row['race'].'</td> 
                 <td>'.$row['dl_status'].'</td>
                 <td>'.$row['hair_color'].'</td>
                 <td>'.$row['build'].'</td>
