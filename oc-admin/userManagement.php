@@ -460,8 +460,8 @@ This program comes with ABSOLUTELY NO WARRANTY; Use at your own risk.
                         console.log();
                     }
                     console.log("object: %O", result)
-                    $('select[name="userGroups"]').selectpicker('refresh');
-                    $('#userRole').selectpicker('refresh');
+                    //$('select[name="userGroups"]').selectpicker('refresh');
+                    //$('#userRole').selectpicker('refresh');
 
 
                 },
